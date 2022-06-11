@@ -1,0 +1,82 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: transform, visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal_list {
+  list-style: none;
+  padding: 0 20px 0 20px;
+}
+
+.modal_item {
+  display: flex;
+  margin-top: 46px;
+  align-items: center;
+}
+
+.country_name {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #000000;
+}
+
+.image {
+  padding-right: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.modal_text {
+  width: 380px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #666666;
+}
+
+.modal_info {
+  font-size: 24px;
+  line-height: 28px;
+  color: #666666;
+}
+
+.modal_button {
+  background: #2196f3;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 11px 70px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  margin: 36px auto 20px auto;
+}
+
+.modal_button:hover {
+  background: rebeccapurple;
+  transition: all 250ms ease;
+}
